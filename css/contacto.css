@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+.maincont {
+  display: grid;
+  background-image: url(../imagenes/contacto.jpg);
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "primercon primercon" "Formulario segundocont";
+}
+.maincont .primercon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas: "titulocont" "parrafocon";
+  grid-area: primercon;
+  max-width: 80%;
+  justify-self: center;
+}
+.maincont .primercon .titulocont {
+  justify-self: center;
+  align-self: end;
+  grid-area: titulocont;
+  font-weight: bold;
+  animation-name: nombre_escala;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+@keyframes nombre_escala {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.maincont .primercon .parrafocon {
+  justify-self: center;
+  align-self: flex-start;
+  grid-area: parrafocon;
+  font-size: 20px;
+}
+.maincont .Formulario {
+  justify-self: center;
+  grid-area: Formulario;
+  width: 600px;
+}
+.maincont .Formulario .formulario1 {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 20px;
+}
+.maincont .segundocont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.8fr 0.3fr 0.8fr 2.8fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "subcont1" "subparrafocont1" "subcont2" "subparrafocont2" "imagecontacto";
+  grid-area: segundocont;
+  max-width: 80%;
+  justify-items: center;
+  justify-items: center;
+}
+.maincont .subcont1 {
+  grid-area: subcont1;
+}
+.maincont .subparrafocont1 {
+  grid-area: subparrafocont1;
+}
+.maincont .subcont2 {
+  grid-area: subcont2;
+}
+.maincont .subparrafocont2 {
+  grid-area: subparrafocont2;
+}
+.maincont .imagecontacto {
+  grid-area: imagecontacto;
+}
+.maincont .form-text {
+  color: #5c5c5c;
+}
+.maincont .imagecontacto {
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=contacto.css.map */

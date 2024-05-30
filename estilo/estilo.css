@@ -1,0 +1,992 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.Titulomain {     
+font-size: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: "bricktonw";
+text-shadow: 0px 6px 9px rgba(0, 0, 0, 0.952);
+
+}
+
+.logonav {
+  height: 35px;
+}
+.main {
+    height: 1250px;
+    background-image: url("../imagenes/fondo-main.jpg");
+    background-size: auto;
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "imagenbloque imagenbloque imagenbloque"
+    "intro intro intro"
+    "intro intro intro"
+    "intro intro intro"
+    "articulo1 articulo2 articulo3";
+    
+    
+}
+.imagenbloque {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 300px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px
+}
+
+.logoprincipal {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    margin-bottom: 10px;
+   
+}
+@font-face {
+    font-family: "bricktonw";
+    src:
+     local("bricktonw"),
+     url(../ttf/Bricktown.ttf) format("truetype");
+}
+.subtitulomain0 {
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: bold;
+    
+}
+.footer {
+    display: flex;
+    height: 40px;
+    background-color: #1f0202;
+    align-items: center;
+    justify-content: center;
+}
+.logofooter {
+    padding: 5px 10px;
+    height: 40px;
+    
+
+}
+.articulo1 { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    grid-area: articulo1;
+    padding: 5px 20px; 
+    text-align: justify;
+}
+.articulo2 { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    grid-area: articulo2; 
+    padding: 5px 20px;
+    text-align: justify;
+}
+.articulo3 { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    grid-area: articulo3;
+    padding: 5px 20px;
+    text-align: justify;
+}
+.imagenbloque { 
+    grid-area: imagenbloque;
+}
+.intro { 
+    grid-area: intro;
+}
+
+.subtitulomain1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.subtitulomain2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.subtitulomain3 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.iconoarticulos {
+    
+    width: auto;
+    height: 65px;
+}
+.textoar{
+    font-size: 15px;
+}
+.mainhospedaje {
+    background-image: url(../imagenes/fondo-hospedaje.jpg);
+    height: 100vh;
+       
+}
+
+
+.mainhospedaje {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulohospedaje titulohospedaje titulohospedaje"
+    "boxcasas1 boxcasas2 boxcasas3";
+}
+
+.titulohospedaje { grid-area: titulohospedaje; }
+
+.boxcasas1 { grid-area: boxcasas1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+ }
+ .cabañas {
+    position: absolute;
+    top: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    background-color: #1f020294; 
+    padding: 5px 10px;
+    border-radius: 5px;
+ }
+
+.boxcasas2 { 
+   grid-area: boxcasas2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+
+  }
+.duplex {
+    position: absolute;
+    top: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    background-color: #1f020294; 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.boxcasas3 { 
+    grid-area: boxcasas3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+  }
+.pucara { 
+    position: absolute;
+    top: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    background-color: #1f020294; 
+    padding: 5px 10px;
+    border-radius: 5px;
+}  
+
+.titulohospedaje{
+  margin-top: 100px;
+  text-align: center;
+  font-family: "bricktonw";
+  font-size: 40px;
+  background-color: #1f0202;
+  margin-bottom: 20px;
+  line-height: 80px;
+  
+}
+.imagencasa3-hover-small,
+.imagencasa1-hover-small,
+.imagencasa2-hover-small {
+        display: none;
+       
+}
+
+.imagencasa1-hover,
+.imagencasa2-hover,
+.imagencasa3-hover {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0px 6px 9px black;
+  max-width: 100%;
+}
+.imagencasa1,
+.imagencasa2,
+.imagencasa3 {
+  max-width: 100%;
+}
+
+.boxcasas1:hover .imagencasa1 {
+  display: none;
+}
+
+.boxcasas1:hover .imagencasa1-hover {
+  display: block;
+}
+
+.boxcasas2:hover .imagencasa2 {
+  display: none;
+}
+
+.boxcasas2:hover .imagencasa2-hover {
+  display: block;
+}
+
+.boxcasas3:hover .imagencasa3 {
+  display: none;
+}
+
+.boxcasas3:hover .imagencasa3-hover {
+  display: block;
+}
+.mainsobre {
+  background-image: url(../imagenes/fondosobrenosotros.jpg);
+  background-size: cover;
+  
+}
+.mainsobre {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nosotros"
+    "datouno"
+    "datodos";
+    display: grid;
+  justify-items: center;
+}
+
+.nosotros { grid-area: nosotros; }
+
+.datouno {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imagen1sobrenosotros1 titulosobrenosotros1 titulosobrenosotros1"
+    "imagen1sobrenosotros1 parrafosobrenosotos1 parrafosobrenosotos1"
+    "imagen1sobrenosotros1 parrafosobrenosotos1 parrafosobrenosotos1";
+  grid-area: datouno;
+}
+
+.titulosobrenosotros1 { grid-area: titulosobrenosotros1; }
+
+.parrafosobrenosotos1 { grid-area: parrafosobrenosotos1; }
+
+.imagen1sobrenosotros1 { grid-area: imagen1sobrenosotros1; }
+
+.datodos {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulosobrenosotros2 titulosobrenosotros2 imagen1sobrenosotros2"
+    "parrafosobrenosotros2 parrafosobrenosotros2 imagen1sobrenosotros2"
+    "parrafosobrenosotros2 parrafosobrenosotros2 imagen1sobrenosotros2";
+  grid-area: datodos;
+}
+
+.imagen1sobrenosotros2 { grid-area: imagen1sobrenosotros2; }
+
+.titulosobrenosotros2 { grid-area: titulosobrenosotros2; }
+
+.parrafosobrenosotros2 { grid-area: parrafosobrenosotros2; }
+
+.imagen1sobrenosotros1{
+  display: grid;
+  justify-content: end;
+}
+
+.sobrenosotrosimg1 {
+  
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.801);
+  
+}
+
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.marca {
+  font-family: "bricktonw";
+  font-size: 100px;
+  align-items: center;
+  text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.815);
+  
+}
+
+.datouno{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  width: 75%;
+  
+  
+  
+  
+}
+.datodos{
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 75%;
+  
+  
+}
+
+.titulosobrenosotros1 {
+  padding-left:  20px;
+  padding-top: 40px;
+ 
+  
+    
+}
+.parrafosobrenosotos1{
+  padding-left: 20px;
+  display: flex;
+  align-items: start;
+  
+
+}
+.parrafosobrenosotros2 {
+  padding-right: 20px;
+  text-align: right;
+  
+}
+.titulosobrenosotros2 {
+  padding-right: 20px;
+  padding-top: 40px;
+  text-align: right;
+  
+  
+}
+.imagen1sobrenosotros2{
+  display: grid;
+  justify-items: left;
+}
+.titulosobre{
+  font-weight: bold;
+}
+
+.mainaventura{
+  background-image: url(../imagenes/fondo-aventuras.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainaventura {  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 0.7fr 1.8fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    "aventurainfo videosav"
+    ". .";
+}
+
+.aventurainfo {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.4fr 0.4fr 2.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titulomainav"
+    "linkvideo"
+    "subav"
+    "parrafoaventura";
+  grid-area: aventurainfo;
+  padding-left: 60px;
+  max-width: 70%;
+  justify-self: center;
+}
+
+.Titulomainav {
+  align-self: end;
+  grid-area: Titulomainav;
+  font-family: "bricktonw";
+  text-shadow: 0px 6px 9px rgba(0, 0, 0, 0.952);
+
+}
+
+.subav { 
+  grid-area: subav; 
+  font-size: 35px;
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+.linkvideo { grid-area: linkvideo;
+align-items: center; 
+}
+
+.parrafoaventura { grid-area: parrafoaventura; }
+
+.videosav {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1.4fr 1.4fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    "videosaventura1 videosaventura1"
+    "videosaventura2 videosaventura2"
+    ". .";
+  grid-area: videosav;
+  justify-self: start;
+  
+}
+
+.videosaventura2 {
+  justify-self: center;
+  grid-area: videosaventura2;
+  
+}
+
+.videosaventura1 {
+  justify-self: center;
+  grid-area: videosaventura1;
+}
+.videosiframe{
+  border-radius: 20px;
+}
+.linkav{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+   
+}
+.botonplay {
+  width: 70px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.maincont{
+  background-image: url(../imagenes/contacto.jpg);
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.maincont {  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "primercon primercon"
+    "Formulario segundocont";
+    
+}
+
+.primercon {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas:
+    "titulocont"
+    "parrafocon";
+  grid-area: primercon;
+  max-width: 80%;
+  justify-self: center;
+}
+
+.titulocont {
+  justify-self: center;
+  align-self: end;
+  grid-area: titulocont;
+  font-weight: bold;
+}
+
+.parrafocon {
+  justify-self: center;
+  align-self: flex-start;
+  grid-area: parrafocon;
+  font-size: 20px;
+}
+
+.Formulario {
+  justify-self: center;
+  grid-area: Formulario;
+  width: 600px;
+  
+  
+}
+.formulario1 {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 20px;
+  
+  
+}
+
+
+.segundocont {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.8fr 0.3fr 0.8fr 2.8fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "subcont1"
+    "subparrafocont1"
+    "subcont2"
+    "subparrafocont2"
+    "imagecontacto";
+  grid-area: segundocont;
+  max-width: 80%;
+  justify-items: center;
+  justify-items: center;
+}
+
+.subcont1 { grid-area: subcont1; }
+
+.subparrafocont1 { grid-area: subparrafocont1; }
+
+.subcont2 { grid-area: subcont2; }
+
+.subparrafocont2 { grid-area: subparrafocont2; }
+
+.imagecontacto { grid-area: imagecontacto; }
+.form-text {
+  color: #5c5c5c;
+}
+.imagecontacto{
+  border-radius: 20px;
+  
+}
+
+@media only screen and (max-width: 730px) {
+    .main {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imagenbloque imagenbloque imagenbloque"
+          "intro intro intro"
+          "articulo1 articulo1 articulo1"
+          "articulo2 articulo2 articulo2"
+          "articulo3 articulo3 articulo3";
+      }
+      
+      .imagenbloque { grid-area: imagenbloque; }
+      
+      .intro { grid-area: intro; }
+      
+      .articulo1 { grid-area: articulo1; }
+      
+      .articulo2 { grid-area: articulo2; }
+      
+      .articulo3 { grid-area: articulo3; }
+      
+      .logoprincipal {
+        height: 90px;
+        width: auto;
+        align-self: end;
+        
+        
+      }
+      .imagenbloque {
+        margin-bottom: 5px;
+        padding-top: 150px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .Titulomain {
+        font-size: 50px;
+      }
+      .primerparrafo {
+        font-size: 10px;
+      }
+      .intro{
+        max-width: 400px;
+        height: 300px;
+      }
+      .articulo1,
+      .articulo2,
+      .articulo3 {
+        font-size: 10px;
+      }
+      .textoar {
+        font-size: 10px;
+        max-width: 400px;
+      }
+      .iconoarticulos{
+        height: 50px;
+      }
+      .logofooter{
+        height: 30px;
+      }
+      
+      .Titulomain{
+        text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.658);
+      }
+      .main{
+        background-image: url(../imagenes/fondo-main1.jpg);
+      }
+      .subtitulomain0 {
+        font-size: 20px;
+      }
+      
+      .mainhospedaje {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "titulohospedaje"
+          "boxcasas1"
+          "boxcasas2"
+          "boxcasas3";
+      }
+      
+      .titulohospedaje { grid-area: titulohospedaje; }
+      
+      .boxcasas1 { grid-area: boxcasas1; }
+      
+      .boxcasas2 { grid-area: boxcasas2; }
+      
+      .boxcasas3 { grid-area: boxcasas3; }
+      
+      .mainhospedaje {
+        background-image: url(../imagenes/fondo-hospedajemedia.jpg);
+        height: 100%;
+      }
+      .boxcasas1 img {
+        
+        background-image: url(../imagenes/casamedia1.png);
+
+      }
+      .imagencasa1-hover,
+      .imagencasa2-hover,
+      .imagencasa3-hover,
+      .imagencasa1,
+      .imagencasa2,
+      .imagencasa3 {
+        display: none;
+      }
+      
+      .imagencasa3-hover-small,
+      .imagencasa1-hover-small,
+      .imagencasa2-hover-small {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 6px 12px #1f0202;
+        display: block;
+      }
+      
+      .boxcasas1:hover .imagencasa1-hover {
+        display: none;
+      }
+
+      .boxcasas2:hover .imagencasa2-hover {
+        display: none;
+      }
+      
+      .boxcasas3:hover .imagencasa3-hover {
+        display: none;
+      }
+      .pucara,
+      .cabañas,
+      .duplex {
+        top: 210px;
+        border-radius: 7px;
+        background-color: #0e0e0ee0;
+      }
+      .boxcasas1:active {
+        scale: 110%; 
+      }
+      .boxcasas2:active {
+        scale: 110%; 
+      }
+      .boxcasas3:active {
+        scale: 110%; 
+      }
+      .mainsobre {  display: grid;
+        grid-template-columns: 0.7fr 1.6fr 0.7fr;
+        grid-template-rows: 0.4fr 1.3fr 1.3fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". nosotros ."
+          ". datouno ."
+          ". datodos .";
+      }
+      
+      .nosotros { grid-area: nosotros; }
+      
+      .datouno {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.4fr 0.5fr 1.1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". imagen1sobrenosotros1 ."
+          ". titulosobrenosotros1 ."
+          ". parrafosobrenosotos1 .";
+        grid-area: datouno;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .imagen1sobrenosotros1 { grid-area: imagen1sobrenosotros1; }
+      
+      .titulosobrenosotros1 { grid-area: titulosobrenosotros1; }
+      
+      .parrafosobrenosotos1 { grid-area: parrafosobrenosotos1; }
+      
+      .datodos {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.4fr 0.5fr 1.1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". imagen1sobrenosotros2 ."
+          ". titulosobrenosotros2 ."
+          ". parrafosobrenosotros2 .";
+        grid-area: datodos;
+      }
+      
+      .imagen1sobrenosotros2 { grid-area: imagen1sobrenosotros2; }
+      
+      .titulosobrenosotros2 { grid-area: titulosobrenosotros2; }
+      
+      .parrafosobrenosotros2 { grid-area: parrafosobrenosotros2; }
+       
+      .mainsobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .datouno, .datodos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .datodos{
+        padding-bottom: 30px;
+      }
+      .datouno{
+        padding-bottom: 0px;
+      }
+    
+      .titulosobrenosotros1, 
+      .parrafosobrenosotos1,
+      .titulosobrenosotros2,
+      .parrafosobrenosotros2 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+      }
+    
+      .imagen1sobrenosotros1, 
+      .imagen1sobrenosotros2 {
+        justify-content: center;
+        
+      }
+      .marca {
+        font-size: 50px;
+      }
+      .nosotros{
+        padding-bottom: 30px;
+      }
+      .sobrenosotrosimg1{
+        max-width: 100%;
+        
+      }
+      .mainsobre {
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+      }  
+      .titulosobre{
+        font-size: 20px;
+      }
+      .mainaventura {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.4fr 2.1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "."
+          "aventurainfo"
+          "videosav";
+        background-image: url(../imagenes/fondo-aventurasmedia.jpg);  
+        height: 195vh;
+      }
+      
+      .aventurainfo {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 2.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Titulomainav"
+          "linkvideo"
+          "subav"
+          "parrafoaventura";
+        grid-area: aventurainfo;
+        padding-left: 0px;
+        max-height: 60%;
+        justify-items: center;
+        
+      }
+      
+      .Titulomainav {
+        font-size: 40px;
+        grid-area: Titulomainav;
+        padding-top: 30px;
+        
+      }
+      
+      .subav {
+        justify-self: center;
+        grid-area: subav;
+      }
+      
+      .linkvideo {
+        justify-self: start;
+        grid-area: linkvideo;
+      }
+      
+      .parrafoaventura {
+        justify-self: center;
+        grid-area: parrafoaventura;
+        max-height: 10%;
+      }
+      
+      .videosav {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "videosaventura1"
+          "videosaventura2";
+        grid-area: videosav;
+        justify-self: center;
+        max-height: 80%;
+        align-self: start;
+      }
+      
+      .videosaventura1 {
+        
+        grid-area: videosaventura1;
+      }
+      
+      .videosaventura2 {
+        
+        grid-area: videosaventura2;
+      }
+      
+      .maincont {
+        height: auto;
+        padding: 20px;
+      }
+    
+      .maincont,
+      .primercon,
+      .segundocont {
+        display: block;
+        text-align: center;
+      }
+    
+      .maincont,
+      .primercon,
+      .segundocont,
+      .Formulario,
+      .formulario1,
+      .titulocont,
+      .parrafocon,
+      .subcont1,
+      .subparrafocont1,
+      .subcont2,
+      .subparrafocont2,
+      .imagecontacto {
+        width: 100%;
+        max-width: 100%;
+      }
+    
+      .maincont,
+      .segundocont {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    
+      .Formulario {
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .imagecontacto img {
+        max-width: 80%;
+      }
+}

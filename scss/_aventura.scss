@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.mainaventura {  display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 0.7fr 1.8fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      "aventurainfo videosav"
+      ". .";
+  }
+  
+  .aventurainfo {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.4fr 0.4fr 2.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Titulomainav"
+      "linkvideo"
+      "subav"
+      "parrafoaventura";
+    grid-area: aventurainfo;
+    padding-left: 60px;
+    max-width: 70%;
+    justify-self: center;
+    } 
+  .linkvideo { grid-area: linkvideo;
+    align-items: center; 
+    }
+    
+    .parrafoaventura { grid-area: parrafoaventura; }
+    
+    .videosav {  display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.4fr 1.4fr 1.4fr 1.8fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". ."
+        "videosaventura1 videosaventura1"
+        "videosaventura2 videosaventura2"
+        ". .";
+      grid-area: videosav;
+      justify-self: start;
+      
+    }
+    
+    .videosaventura2 {
+      justify-self: center;
+      grid-area: videosaventura2;
+      
+    }
+    
+    .videosaventura1 {
+      justify-self: center;
+      grid-area: videosaventura1;
+    }
+    .mainaventura{
+        background-image: url(../imagenes/fondo-aventuras.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+        .Titulomainav {
+            align-self: end;
+            grid-area: Titulomainav;
+            font-family: "bricktonw";
+            text-shadow: 0px 6px 9px rgba(0, 0, 0, 0.952);
+          
+        }
+        .subav { 
+            grid-area: subav; 
+            font-size: 35px;
+            padding-top: 20px;
+            font-weight: bolder;
+          }
+        .linkav{
+            text-decoration: none;
+            color: #ffffff;
+             font-size: 30px;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+            
+        }
+        .botonplay {
+            width: 70px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .videosiframe{
+            border-radius: 20px;
+        }  
+    

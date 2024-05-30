@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.mainhospedaje {
+    background-image: url(../imagenes/fondo-hospedaje.jpg);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulohospedaje titulohospedaje titulohospedaje"
+        "boxcasas1 boxcasas2 boxcasas3";
+    
+}
+.titulohospedaje { 
+    grid-area: titulohospedaje;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "bricktonw";
+    font-size: 40px;
+    background-color: $bgcolorcereza;
+    margin-bottom: 20px;
+    line-height: 80px;
+} 
+.boxcasas1 { grid-area: boxcasas1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .cabañas {
+        position: absolute;
+        top: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 20px;
+        background-color: $bgcolorcerezatrasnparente; 
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+.boxcasas2 { 
+    grid-area: boxcasas2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .duplex {
+        position: absolute;
+        top: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 20px;
+        background-color: $bgcolorcerezatrasnparente; 
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+.boxcasas3 { 
+    grid-area: boxcasas3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    .pucara { 
+        position: absolute;
+        top: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 20px;
+        background-color: $bgcolorcerezatrasnparente; 
+        padding: 5px 10px;
+        border-radius: 5px;
+    }  
+}
+.imagencasa3-hover-small,
+.imagencasa1-hover-small,
+.imagencasa2-hover-small {
+        display: none;
+    
+}
+
+.imagencasa1-hover,
+.imagencasa2-hover,
+.imagencasa3-hover {
+display: none;
+border-radius: 10px;
+box-shadow: 0px 6px 9px black;
+max-width: 100%;
+}
+.imagencasa1,
+.imagencasa2,
+.imagencasa3 {
+max-width: 100%;
+}
+
+.boxcasas1:hover .imagencasa1 {
+display: none;
+}
+
+.boxcasas1:hover .imagencasa1-hover {
+display: block;
+}
+
+.boxcasas2:hover .imagencasa2 {
+display: none;
+}
+
+.boxcasas2:hover .imagencasa2-hover {
+display: block;
+}
+
+.boxcasas3:hover .imagencasa3 {
+display: none;
+}
+
+.boxcasas3:hover .imagencasa3-hover {
+display: block;
+}
+.boxcasas1:active {
+    scale: 110%; 
+}
+  .boxcasas2:active {
+    scale: 110%; 
+}
+  .boxcasas3:active {
+    scale: 110%; 
+}     
+   
